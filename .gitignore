@@ -162,5 +162,4 @@ $RECYCLE.BIN/
 .vscode
 .idea
 *.iml
-*.SLN
-*.sln
+.vs
