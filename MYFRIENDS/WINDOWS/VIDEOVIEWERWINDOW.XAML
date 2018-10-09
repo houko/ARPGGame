@@ -1,0 +1,47 @@
+﻿<Window
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	x:Class="MyFriends.VideoViewerWindow"
+	x:Name="Window"
+	Title="MyFriends"
+	Width="760" Height="660" Icon="..\Images\myFriendsSmall.png"
+    ShowInTaskbar="False" WindowStyle="ToolWindow">
+
+	<Grid x:Name="GridOuter" Background="#FF000000" Height="Auto" Width="Auto">
+		<Border BorderBrush="#FFD0601D" BorderThickness="4,4,4,4">	
+			<DockPanel Margin="0,0,0,0" LastChildFill="True" Background="#FF414141" HorizontalAlignment="Left" Width="Auto" Height="Auto">
+				<DockPanel VerticalAlignment="Top" Height="113" DockPanel.Dock="Top" LastChildFill="False" HorizontalAlignment="Left" x:Name="dpTop" Width="{Binding Path=ActualWidth, ElementName=Window, Mode=Default}" Style="{StaticResource ExpanderHeaderFocusVisual}">
+					<Canvas x:Name="canvasTop" Height="0" DockPanel.Dock="Top" Width="{Binding Path=ActualWidth, ElementName=Window, Mode=Default}" OpacityMask="#FF9F4C4C">
+						<Canvas.Background>
+							<LinearGradientBrush EndPoint="0.628,0.051" StartPoint="0.628,0.788">
+								<GradientStop Color="#FFD0601D" Offset="0"/>
+								<GradientStop Color="#FFFFB917" Offset="1"/>
+							</LinearGradientBrush>
+						</Canvas.Background>
+                    </Canvas>
+					<Canvas x:Name="canvasBottom" Height="25" Background="#FF000000" Width="{Binding Path=ActualWidth, ElementName=Window, Mode=Default}">
+						<Label HorizontalAlignment="Left" VerticalAlignment="Top" Height="25.96" Content="查看设置的视频" FontWeight="Bold" Foreground="#FFFFFFFF"/> 
+					</Canvas>
+				</DockPanel>
+
+				<DockPanel DockPanel.Dock="Bottom" LastChildFill="True" Height="Auto" Background="#FF000000">
+
+					<Canvas x:Name="mainCanvasTop" DockPanel.Dock="Top" Height="432" Background="#FF663F75" OpacityMask="#FF639192">
+						<Border Width="462" Height="385" Background="White" BorderThickness="5,5,5,5" CornerRadius="10,10,10,10" Canvas.Left="20" Canvas.Top="22" BorderBrush="{x:Null}">
+							<MediaElement x:Name="videoSrc" Margin="5,5,5,5" LoadedBehavior="Manual" Stretch="Fill" Width="Auto" Height="Auto"/>
+						</Border>
+								<Button x:Name="btnVideoPlay" ToolTip="播放视频" Template="{DynamicResource GlassButton}" Width="40" Height="40" Content="4" Canvas.Left="500" Canvas.Top="95" Foreground="#FF923CB3" FontSize="25" FontFamily="Webdings" Click="btnVideoPlay_Click" />
+								<Button x:Name="btnVideoStop" ToolTip="停止播放" Template="{DynamicResource GlassButton}" Width="40" Height="40" Content="&lt;" Canvas.Left="500" Canvas.Top="166" Foreground="#FFFFFFFF" FontSize="20" FontFamily="Webdings" Click="btnVideoStop_Click"/>
+					</Canvas>
+					
+					<Canvas x:Name="mainCanvasBottom" DockPanel.Dock="Bottom" Height="34" Background="#FF000000">
+						<Button Width="105" x:Name="btnClose" Height="25" Template="{DynamicResource GlassButton}" ToolTip="Exit" Content="退出吧" BorderThickness="1,1,1,1" FontFamily="Ser" FontSize="12" FontWeight="Normal" Foreground="#FFAD7575" HorizontalAlignment="Right" Canvas.Left="608" Click="btnClose_Click" Canvas.Top="2" Background="#FFBD5A5A" />
+					</Canvas>
+				</DockPanel>
+			 
+			</DockPanel> 
+
+
+		</Border>				
+	</Grid>
+</Window>
