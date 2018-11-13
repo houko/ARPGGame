@@ -1,0 +1,209 @@
+fileFormatVersion: 2
+guid: 97ca074d5ea524e4f8db518bd0a9813b
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Merchant Spine2
+    100002: Merchant Spine1
+    100004: Merchant Spine
+    100006: Object018
+    100008: Merchant L Toe0
+    100010: Merchant L Foot
+    100012: M_bag02
+    100014: M_bag01
+    100016: R_chest
+    100018: Object017
+    100020: Merchant R Foot
+    100022: Merchant R Calf
+    100024: Merchant R UpperArm
+    100026: Merchant R Clavicle
+    100028: Merchant L Forearm
+    100030: Merchant L UpperArm
+    100032: Merchant L Clavicle
+    100034: Merchant HeadNub
+    100036: Merchant Footsteps
+    100038: Particle VADSiew 01
+    100040: Particle VieADw 01
+    100042: Particle VieDSw 01
+    100044: Particle View 0ASD1
+    100046: Particle View 01
+    100048: Particle View 01 1
+    100050: Particle View 01 2
+    100052: Particle View 01 3
+    100054: L_chest
+    100056: Merchant R Hand
+    100058: Merchant Tail2
+    100060: Merchant Tail1
+    100062: Merchant L Calf
+    100064: M_bag_end
+    100066: //RootNode
+    100068: Merchant TailNub
+    100070: Merchant R Toe0Nub
+    100072: Merchant R Thigh
+    100074: Merchant L Toe0Nub
+    100076: Merchant L Thigh
+    100078: Merchant R Forearm
+    100080: Merchant Pelvis
+    100082: Merchant
+    100084: Merchant_body
+    100086: L_ear
+    100088: Merchant Head
+    100090: Merchant Neck
+    100092: R_ear
+    100094: Merchant L Hand
+    100096: Object015
+    100098: Object01
+    100100: Object019
+    100102: Object016
+    100104: Merchant Tail
+    100106: Merchant R Toe0
+    400000: Merchant Spine2
+    400002: Merchant Spine1
+    400004: Merchant Spine
+    400006: Object018
+    400008: Merchant L Toe0
+    400010: Merchant L Foot
+    400012: M_bag02
+    400014: M_bag01
+    400016: R_chest
+    400018: Object017
+    400020: Merchant R Foot
+    400022: Merchant R Calf
+    400024: Merchant R UpperArm
+    400026: Merchant R Clavicle
+    400028: Merchant L Forearm
+    400030: Merchant L UpperArm
+    400032: Merchant L Clavicle
+    400034: Merchant HeadNub
+    400036: Merchant Footsteps
+    400038: Particle VADSiew 01
+    400040: Particle VieADw 01
+    400042: Particle VieDSw 01
+    400044: Particle View 0ASD1
+    400046: Particle View 01
+    400048: Particle View 01 1
+    400050: Particle View 01 2
+    400052: Particle View 01 3
+    400054: L_chest
+    400056: Merchant R Hand
+    400058: Merchant Tail2
+    400060: Merchant Tail1
+    400062: Merchant L Calf
+    400064: M_bag_end
+    400066: //RootNode
+    400068: Merchant TailNub
+    400070: Merchant R Toe0Nub
+    400072: Merchant R Thigh
+    400074: Merchant L Toe0Nub
+    400076: Merchant L Thigh
+    400078: Merchant R Forearm
+    400080: Merchant Pelvis
+    400082: Merchant
+    400084: Merchant_body
+    400086: L_ear
+    400088: Merchant Head
+    400090: Merchant Neck
+    400092: R_ear
+    400094: Merchant L Hand
+    400096: Object015
+    400098: Object01
+    400100: Object019
+    400102: Object016
+    400104: Merchant Tail
+    400106: Merchant R Toe0
+    4300000: Object01
+    4300002: Object015
+    4300004: Merchant_body
+    4300006: Object017
+    4300008: Object018
+    4300010: Object019
+    7400000: Take 001
+    11100000: //RootNode
+    13700000: Object018
+    13700002: Object017
+    13700004: Merchant_body
+    13700006: Object015
+    13700008: Object01
+    13700010: Object019
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.01
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 0
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 0
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 4
+    normalCalculationMode: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  humanoidOversampling: 1
+  additionalBone: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
