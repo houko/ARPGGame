@@ -8,7 +8,7 @@
 
 public class Bag
 {
-    private int EmptyCount { get; set; }
+    private int CurrentCount { get; set; }
 
     private int MaxCount { get; set; }
 }
