@@ -6,6 +6,9 @@
 * Desc: 背包 
 */
 
+using System;
+
+[Serializable]
 public class Bag
 {
     private int CurrentCount { get; set; }

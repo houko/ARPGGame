@@ -6,9 +6,10 @@
 * Desc: 
 */
 
+using System;
 using System.ComponentModel;
-using UnityEngine;
 
+[Serializable]
 public class Item
 {
     public int ID { get; set; }

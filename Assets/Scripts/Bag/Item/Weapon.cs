@@ -6,6 +6,9 @@
 * Desc: 
 */
 
+using System;
+
+[Serializable]
 public class Weapon : Item
 {
     private long Attack { get; set; }

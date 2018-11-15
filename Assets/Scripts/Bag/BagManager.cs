@@ -6,19 +6,27 @@
 * Desc: 背包管理器
 */
 
-using Boo.Lang;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class BagManager : MonoBehaviour
 {
     private static BagManager _instance;
 
-    private List<Item> itemList;
+    private void Awake()
+    {
+        ParseJson();
+   
+    }
 
     public void ParseJson()
     {
-        TextAsset textAsset = Resources.Load<TextAsset>("items.json");
-        string json = JsonUtility.ToJson(textAsset.text);
+        TextAsset textAsset = Resources.Load<TextAsset>("items");
+        ItemList itemList = JsonUtility.FromJson<ItemList>(textAsset.text);
+        foreach (var item in itemList.items)
+        {
+            Debug.Log(item);
+        }
     }
 
     public static BagManager Instance()

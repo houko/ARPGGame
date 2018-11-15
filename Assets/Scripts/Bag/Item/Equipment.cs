@@ -6,8 +6,10 @@
 * Desc: 装备
 */
 
+using System;
 using System.ComponentModel;
 
+[Serializable]
 public class Equipment : Item
 {
     /// <summary>

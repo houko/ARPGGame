@@ -3,12 +3,15 @@
 * github: https://github.com/xiaomoinfo
 * email: xiaomo@xiamoo.info
 * QQ_NO: 83387856
-* Desc: 材料
+* Desc: 
 */
 
+
 using System;
+using System.Collections.Generic;
 
 [Serializable]
-public class ItemMaterial : Item
+public class ItemList
 {
+    public Item[] items;
 }

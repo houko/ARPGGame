@@ -6,6 +6,9 @@
 * Desc: 药品
 */
 
+using System;
+
+[Serializable]
 public class Drug : Item
 {
     public long Hp { get; set; }
