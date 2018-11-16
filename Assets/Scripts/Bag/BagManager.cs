@@ -7,6 +7,7 @@
 */
 
 using System.Collections.Generic;
+using System.IO;
 using UnityEngine;
 
 public class BagManager : MonoBehaviour
@@ -16,16 +17,15 @@ public class BagManager : MonoBehaviour
     private void Awake()
     {
         ParseJson();
-   
     }
 
     public void ParseJson()
     {
-        TextAsset textAsset = Resources.Load<TextAsset>("items");
-        ItemList itemList = JsonUtility.FromJson<ItemList>(textAsset.text);
+        string json = File.ReadAllText(Application.streamingAssetsPath + "/item.json");
+        ItemList itemList = JsonUtility.FromJson<ItemList>(json);
         foreach (var item in itemList.items)
         {
-            Debug.Log(item);
+            Debug.Log(item.name);
         }
     }
 

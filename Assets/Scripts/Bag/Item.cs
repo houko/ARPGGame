@@ -16,115 +16,116 @@ public class Item
     /// <summary>
     /// id
     /// </summary>
-    public int ID { get; set; }
+    public int id;
 
     /// <summary>
     /// 名字
     /// </summary>
-    public string Name { get; set; }
+    public string name;
 
     /// <summary>
     /// 描述
     /// </summary>
-    public string Desc { get; set; }
+    public string desc;
 
     /// <summary>
     ///  类型
     /// </summary>
-    public ItemType ItemType { get; set; }
+    public ItemType itemType;
 
     /// <summary>
     /// 品质 
     /// </summary>
-    public ItemQuality ItemQuality { get; set; }
+    public ItemQuality itemQuality;
 
     /// <summary>
     /// 购买价格
     /// </summary>
-    public int BuyPrice { get; set; }
+    public int buyPrice;
 
     /// <summary>
     /// 售出价格
     /// </summary>
-    public int SellPrice { get; set; }
+    public int sellPrice;
 
     /// <summary>
     /// 重量
     /// </summary>
-    public float Weight { get; set; }
+    public float weight;
 
     /// <summary>
     /// icon
     /// </summary>
-    public string Icon { get; set; }
+    public string icon;
+
+
+    /// <summary>
+    /// 叠加容量
+    /// </summary>
+    public int capacity;
 
     /// <summary>
     /// 血量
     /// </summary>
-    public long Hp { get; set; }
+    public long hp;
 
     /// <summary>
     /// 蓝量
     /// </summary>
-    public long Mp { get; set; }
+    public long mp;
 
     /// <summary>
     /// 力量
     /// </summary>
-    public int Power { get; set; }
+    public int power;
 
     /// <summary>
     /// 智力
     /// </summary>
-    public int Intellect { get; set; }
+    public int intellect;
 
     /// <summary>
     /// 敏捷
     /// </summary>
-    public int Agility { get; set; }
+    public int agility;
 
     /// <summary>
     /// 体力
     /// </summary>
-    public int Stamina { get; set; }
-
-    /// <summary>
-    /// 装备类型
-    /// </summary>
-    private EquipmentType EquipmentType { get; set; }
+    public int stamina;
 
 
     public Item()
     {
-        ID = -1;
+        id = -1;
     }
 
+
     public Item(int id, string name, string desc, ItemType itemType, ItemQuality itemQuality, int buyPrice, int sellPrice, float weight, string icon, long hp, long mp, int power,
-        int intellect, int agility, int stamina, EquipmentType equipmentType)
+        int intellect, int agility, int stamina)
     {
-        ID = id;
-        Name = name;
-        Desc = desc;
-        ItemType = itemType;
-        ItemQuality = itemQuality;
-        BuyPrice = buyPrice;
-        SellPrice = sellPrice;
-        Weight = weight;
-        Icon = icon;
-        Hp = hp;
-        Mp = mp;
-        Power = power;
-        Intellect = intellect;
-        Agility = agility;
-        Stamina = stamina;
-        EquipmentType = equipmentType;
+        this.id = id;
+        this.name = name;
+        this.desc = desc;
+        this.itemType = itemType;
+        this.itemQuality = itemQuality;
+        this.buyPrice = buyPrice;
+        this.sellPrice = sellPrice;
+        this.weight = weight;
+        this.icon = icon;
+        this.hp = hp;
+        this.mp = mp;
+        this.power = power;
+        this.intellect = intellect;
+        this.agility = agility;
+        this.stamina = stamina;
     }
 }
 
 [Serializable]
 public class ItemList
 {
-    public List<Item> items;
+    public List<Item> items = new List<Item>();
 }
 
 

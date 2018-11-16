@@ -1,0 +1,40 @@
+{
+  "items": [
+    {
+      "id": 1,
+      "name": "血瓶",
+      "desc": "加血用的",
+      "itemType": 1,
+      "itemQuality": 1,
+      "buyPrice": 10,
+      "sellPrice": 20,
+      "weight": 1.0,
+      "icon": "",
+      "capacity": 0,
+      "hp": 100,
+      "mp": 0,
+      "power": 0,
+      "intellect": 0,
+      "agility": 0,
+      "stamina": 0
+    },
+    {
+      "id": 2,
+      "name": "血瓶2",
+      "desc": "加血用的",
+      "itemType": 1,
+      "itemQuality": 1,
+      "buyPrice": 10,
+      "sellPrice": 20,
+      "weight": 1.0,
+      "icon": "",
+      "capacity": 0,
+      "hp": 100,
+      "mp": 0,
+      "power": 0,
+      "intellect": 0,
+      "agility": 0,
+      "stamina": 0
+    }
+  ]
+}
