@@ -1,0 +1,277 @@
+fileFormatVersion: 2
+guid: a48a587aed6960d4bb25c926ab3fb6f5
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Alpha_01
+    100002: DIMIAN
+    100004: Langan
+    100006: louti
+    100008: Rock_01
+    100010: Rock_02
+    100012: //RootNode
+    100014: WTI
+    100016: ______05
+    100018: Group007
+    100020: Object320
+    100022: Object565
+    100024: Plane013
+    100026: Plane050
+    100028: Plane051
+    100030: Plane052
+    100032: Plane053
+    100034: Plane054
+    100036: Plane055
+    100038: Plane056
+    100040: Plane057
+    100042: Plane058
+    100044: Plane059
+    100046: Plane060
+    100048: Plane061
+    100050: Plane062
+    100052: Plane063
+    100054: "\u5BF9\u8C6105"
+    400000: Alpha_01
+    400002: DIMIAN
+    400004: Langan
+    400006: louti
+    400008: Rock_01
+    400010: Rock_02
+    400012: //RootNode
+    400014: WTI
+    400016: ______05
+    400018: Group007
+    400020: Object320
+    400022: Object565
+    400024: Plane013
+    400026: Plane050
+    400028: Plane051
+    400030: Plane052
+    400032: Plane053
+    400034: Plane054
+    400036: Plane055
+    400038: Plane056
+    400040: Plane057
+    400042: Plane058
+    400044: Plane059
+    400046: Plane060
+    400048: Plane061
+    400050: Plane062
+    400052: Plane063
+    400054: "\u5BF9\u8C6105"
+    2300000: Alpha_01
+    2300002: DIMIAN
+    2300004: Langan
+    2300006: louti
+    2300008: Rock_01
+    2300010: Rock_02
+    2300012: WTI
+    2300014: ______05
+    2300016: Object320
+    2300018: Object565
+    2300020: Plane013
+    2300022: Plane050
+    2300024: Plane051
+    2300026: Plane052
+    2300028: Plane053
+    2300030: Plane054
+    2300032: Plane055
+    2300034: Plane056
+    2300036: Plane057
+    2300038: Plane058
+    2300040: Plane059
+    2300042: Plane060
+    2300044: Plane061
+    2300046: Plane062
+    2300048: Plane063
+    2300050: "\u5BF9\u8C6105"
+    3300000: Alpha_01
+    3300002: DIMIAN
+    3300004: Langan
+    3300006: louti
+    3300008: Rock_01
+    3300010: Rock_02
+    3300012: WTI
+    3300014: ______05
+    3300016: Object320
+    3300018: Object565
+    3300020: Plane013
+    3300022: Plane050
+    3300024: Plane051
+    3300026: Plane052
+    3300028: Plane053
+    3300030: Plane054
+    3300032: Plane055
+    3300034: Plane056
+    3300036: Plane057
+    3300038: Plane058
+    3300040: Plane059
+    3300042: Plane060
+    3300044: Plane061
+    3300046: Plane062
+    3300048: Plane063
+    3300050: "\u5BF9\u8C6105"
+    4300000: louti
+    4300002: Langan
+    4300004: Rock_02
+    4300006: Alpha_01
+    4300008: WTI
+    4300010: Rock_01
+    4300012: DIMIAN
+    4300014: ______05
+    4300016: Plane013
+    4300018: Object565
+    4300020: Plane063
+    4300022: Plane060
+    4300024: Plane056
+    4300026: Plane054
+    4300028: Plane062
+    4300030: Object320
+    4300032: Plane050
+    4300034: Plane051
+    4300036: Plane052
+    4300038: Plane055
+    4300040: Plane057
+    4300042: Plane058
+    4300044: Plane059
+    4300046: Plane053
+    4300048: Plane061
+    4300050: "\u5BF9\u8C6105"
+    9500000: //RootNode
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 03 - Defaultdf
+    second: {fileID: 2100000, guid: dcfd7dedfeb1f43908f0ce628e22abd6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 1234
+    second: {fileID: 2100000, guid: 70a20f5f20d9f4b3ea8656e0aedb9e3c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #1874'
+    second: {fileID: 2100000, guid: 094c39216785e49ae8e99cc54806f77e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aad
+    second: {fileID: 2100000, guid: a5d0204b06ee8408182fc217d1bc1c4d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: adsf
+    second: {fileID: 2100000, guid: baedb3285817e4855a12897e2290d18a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: asdf
+    second: {fileID: 2100000, guid: 1f23ac1a26b434cf7abb1d81ad6b233e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: asdfg
+    second: {fileID: 2100000, guid: 1ddc474786a0e4a11b832b25b351e41d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: asfg
+    second: {fileID: 2100000, guid: 1ddc474786a0e4a11b832b25b351e41d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: dsf
+    second: {fileID: 2100000, guid: 8e154016bb7f940e9bb6fd2bd5d4270d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ga
+    second: {fileID: 2100000, guid: 2169a054709214676be2cc6c16ea9e93, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: gaaa
+    second: {fileID: 2100000, guid: ace17b1d6f67040f799bfcd3f59a15ca, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.01
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 0
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 1
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 0
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 4
+    normalCalculationMode: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

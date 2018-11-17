@@ -1,0 +1,148 @@
+fileFormatVersion: 2
+guid: 884d3fba6857d1d47850d396c20678f9
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: long
+    100002: Object323
+    100004: Object324
+    100006: Object326
+    100008: Object328
+    100010: Object335
+    100012: Object341
+    100014: //RootNode
+    100016: yez
+    100018: zhuzi
+    100020: Particle View 01
+    100022: Particle View 01 1
+    100024: Particle View 01 2
+    100026: Particle View 01 3
+    100028: Object342
+    400000: long
+    400002: Object323
+    400004: Object324
+    400006: Object326
+    400008: Object328
+    400010: Object335
+    400012: Object341
+    400014: //RootNode
+    400016: yez
+    400018: zhuzi
+    400020: Particle View 01
+    400022: Particle View 01 1
+    400024: Particle View 01 2
+    400026: Particle View 01 3
+    400028: Object342
+    2300000: long
+    2300002: Object323
+    2300004: Object324
+    2300006: Object326
+    2300008: Object328
+    2300010: Object335
+    2300012: Object341
+    2300014: yez
+    2300016: zhuzi
+    2300018: Object342
+    3300000: long
+    3300002: Object323
+    3300004: Object324
+    3300006: Object326
+    3300008: Object328
+    3300010: Object335
+    3300012: Object341
+    3300014: yez
+    3300016: zhuzi
+    3300018: Object342
+    4300000: Object323
+    4300002: Object324
+    4300004: Object326
+    4300006: Object328
+    4300008: zhuzi
+    4300010: yez
+    4300012: Object335
+    4300014: long
+    4300016: Object341
+    4300018: Object342
+    9500000: //RootNode
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.01
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 0
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 1
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 0
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 4
+    normalCalculationMode: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
