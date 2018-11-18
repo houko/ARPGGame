@@ -16,6 +16,8 @@ public class UnityChanControlScriptWithRgidBody : MonoBehaviour
     public float lookSmoother = 3.0f; // a smoothing setting for camera motion
 
     public bool useCurves = true; // Mecanimでカーブ調整を使うか設定する
+    
+    public Joystick joystick;
 
     // このスイッチが入っていないとカーブは使われない
     public float useCurvesHeight = 0.5f; // カーブ補正の有効高さ（地面をすり抜けやすい時には大きくする）
@@ -97,7 +99,11 @@ public class UnityChanControlScriptWithRgidBody : MonoBehaviour
         {
             velocity *= backwardSpeed; // 移動速度を掛ける
         }
-
+        
+        // 这里用joy stick控制
+//        velocity = (Vector3.right * joystick.Horizontal + Vector3.forward * joystick.Vertical);
+        
+        
         if (Input.GetButtonDown("Jump"))
         {
             // スペースキーを入力したら
