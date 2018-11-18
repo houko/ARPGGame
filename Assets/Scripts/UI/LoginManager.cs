@@ -60,6 +60,7 @@ namespace UI
         public void EnterGame()
         {
             AsyncOperation loadSceneAsync = SceneManager.LoadSceneAsync("Main");
+            LoadingScene.Instance().StartLoading(loadSceneAsync);
         }
         
         
