@@ -24,7 +24,6 @@ public class LoadingScene : MonoBehaviour
         _loadingScene = this;
         progressBar = GetComponentInChildren<Slider>();
         progressShow = progressBar.GetComponentInChildren<Text>();
-        transform.gameObject.SetActive(false);
     }
 
 
@@ -45,7 +44,6 @@ public class LoadingScene : MonoBehaviour
 
     public void StartLoading(AsyncOperation asyncOperation)
     {
-        transform.gameObject.SetActive(true);
         isStart = true;
         ao = asyncOperation;
     }

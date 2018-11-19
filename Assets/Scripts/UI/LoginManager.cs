@@ -1,5 +1,7 @@
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 namespace UI
 {
@@ -9,10 +11,20 @@ namespace UI
         public RectTransform RegisterFrom;
         public RectTransform RegionFrom;
         public RectTransform CharacterFrom;
+        public RectTransform LoadingForm;
 
+        #region InputField
 
+        public InputField userNameInputField;
+        public InputField passwordInputField;
 
+        #endregion
 
+        private void Start()
+        {
+            EventSystem.current.SetSelectedGameObject(userNameInputField.gameObject);
+            passwordInputField.contentType = InputField.ContentType.Password;
+        }
 
 
         public void LoginGame()
@@ -22,15 +34,13 @@ namespace UI
         }
 
 
-
         public void Register()
         {
             LoginFrom.gameObject.SetActive(false);
             RegisterFrom.gameObject.SetActive(true);
         }
 
-        
-        
+
         public void SelectRegion()
         {
             LoginFrom.gameObject.SetActive(false);
@@ -53,18 +63,14 @@ namespace UI
 
         public void ChangeRole()
         {
-            
         }
 
 
         public void EnterGame()
         {
+            Utility.SetToCenter(LoadingForm);
             AsyncOperation loadSceneAsync = SceneManager.LoadSceneAsync("Main");
             LoadingScene.Instance().StartLoading(loadSceneAsync);
         }
-        
-        
-        
-        
     }
 }

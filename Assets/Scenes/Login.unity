@@ -667,6 +667,9 @@ MonoBehaviour:
   RegisterFrom: {fileID: 231256788}
   RegionFrom: {fileID: 1496557952}
   CharacterFrom: {fileID: 455309169}
+  LoadingForm: {fileID: 338893671}
+  userNameInputField: {fileID: 1392502081}
+  passwordInputField: {fileID: 1835537348}
 --- !u!1 &288195425
 GameObject:
   m_ObjectHideFlags: 0
@@ -1265,7 +1268,7 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 0
     m_MaxSize: 40
-    m_Alignment: 4
+    m_Alignment: 3
     m_AlignByGeometry: 0
     m_RichText: 0
     m_HorizontalOverflow: 1
@@ -2057,7 +2060,7 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 2
     m_MaxSize: 40
-    m_Alignment: 4
+    m_Alignment: 3
     m_AlignByGeometry: 0
     m_RichText: 0
     m_HorizontalOverflow: 1
@@ -3977,7 +3980,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1201232117
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4017,10 +4020,10 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: 6fae1fd475baa4e19a31ff62ca8b5fc7, type: 3}
-    m_FontSize: 14
-    m_FontStyle: 2
+    m_FontSize: 25
+    m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 2
     m_MaxSize: 40
     m_Alignment: 3
     m_AlignByGeometry: 0
@@ -4028,7 +4031,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: please input username
+  m_Text: "\u8BF7\u8F93\u5165\u5BC6\u7801..."
 --- !u!222 &1201232119
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4619,7 +4622,7 @@ GameObject:
   - component: {fileID: 1392502081}
   - component: {fileID: 1392502084}
   m_Layer: 5
-  m_Name: username
+  m_Name: UsernameInputField
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5491,12 +5494,12 @@ Prefab:
     - target: {fileID: 224496709587035206, guid: 37e23a69b938a4c50844a988f05d845c,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 1938
       objectReference: {fileID: 0}
     - target: {fileID: 224496709587035206, guid: 37e23a69b938a4c50844a988f05d845c,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: 522.85
       objectReference: {fileID: 0}
     - target: {fileID: 224496709587035206, guid: 37e23a69b938a4c50844a988f05d845c,
         type: 2}
@@ -5637,7 +5640,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1614073017
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5677,10 +5680,10 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: 6fae1fd475baa4e19a31ff62ca8b5fc7, type: 3}
-    m_FontSize: 14
-    m_FontStyle: 2
+    m_FontSize: 25
+    m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 0
     m_MaxSize: 40
     m_Alignment: 3
     m_AlignByGeometry: 0
@@ -5688,7 +5691,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: please input username
+  m_Text: "\u8BF7\u8F93\u5165\u8D26\u53F7..."
 --- !u!222 &1614073019
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6991,7 +6994,7 @@ GameObject:
   - component: {fileID: 1835537348}
   - component: {fileID: 1835537347}
   m_Layer: 5
-  m_Name: username
+  m_Name: PasswordInputField
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
