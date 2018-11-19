@@ -16,7 +16,7 @@ public class UnityChanControlScriptWithRgidBody : MonoBehaviour
     public float lookSmoother = 3.0f; // a smoothing setting for camera motion
 
     public bool useCurves = true; // Mecanimでカーブ調整を使うか設定する
-    
+
     public Joystick joystick;
 
     // このスイッチが入っていないとカーブは使われない
@@ -43,8 +43,8 @@ public class UnityChanControlScriptWithRgidBody : MonoBehaviour
     // キャラクターコントローラ（カプセルコライダ）の移動量
     private Vector3 velocity;
 
-    // CapsuleColliderで設定されているコライダのHeiht、Centerの初期値を収める変数
-    private float orgColHight;
+    // CapsuleColliderで設定されているコライダのHeight、Centerの初期値を収める変数
+    private float orgColHeight;
     private Vector3 orgVectColCenter;
 
     private Animator anim; // キャラにアタッチされるアニメーターへの参照
@@ -53,10 +53,10 @@ public class UnityChanControlScriptWithRgidBody : MonoBehaviour
     private GameObject cameraObject; // メインカメラへの参照
 
 // アニメーター各ステートへの参照
-    static int idleState = Animator.StringToHash("Base Layer.Idle");
-    static int locoState = Animator.StringToHash("Base Layer.Locomotion");
-    static int jumpState = Animator.StringToHash("Base Layer.Jump");
-    static int restState = Animator.StringToHash("Base Layer.Rest");
+    private static readonly int idleState = Animator.StringToHash("Base Layer.Idle");
+    private static readonly int locoState = Animator.StringToHash("Base Layer.Locomotion");
+    private static readonly int jumpState = Animator.StringToHash("Base Layer.Jump");
+    private static readonly int restState = Animator.StringToHash("Base Layer.Rest");
 
 // 初期化
     void Start()
@@ -69,7 +69,7 @@ public class UnityChanControlScriptWithRgidBody : MonoBehaviour
         //メインカメラを取得する
         cameraObject = GameObject.FindWithTag("MainCamera");
         // CapsuleColliderコンポーネントのHeight、Centerの初期値を保存する
-        orgColHight = col.height;
+        orgColHeight = col.height;
         orgVectColCenter = col.center;
     }
 
@@ -99,11 +99,11 @@ public class UnityChanControlScriptWithRgidBody : MonoBehaviour
         {
             velocity *= backwardSpeed; // 移動速度を掛ける
         }
-        
+
         // 这里用joy stick控制
 //        velocity = (Vector3.right * joystick.Horizontal + Vector3.forward * joystick.Vertical);
-        
-        
+
+
         if (Input.GetButtonDown("Jump"))
         {
             // スペースキーを入力したら
@@ -166,7 +166,7 @@ public class UnityChanControlScriptWithRgidBody : MonoBehaviour
                     {
                         if (hitInfo.distance > useCurvesHeight)
                         {
-                            col.height = orgColHight - jumpHeight; // 調整されたコライダーの高さ
+                            col.height = orgColHeight - jumpHeight; // 調整されたコライダーの高さ
                             float adjCenterY = orgVectColCenter.y + jumpHeight;
                             col.center = new Vector3(0, adjCenterY, 0); // 調整されたコライダーのセンター
                         }
@@ -227,7 +227,7 @@ public class UnityChanControlScriptWithRgidBody : MonoBehaviour
     void resetCollider()
     {
         // コンポーネントのHeight、Centerの初期値を戻す
-        col.height = orgColHight;
+        col.height = orgColHeight;
         col.center = orgVectColCenter;
     }
 }

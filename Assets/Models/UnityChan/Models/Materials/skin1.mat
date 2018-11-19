@@ -34,5 +34,5 @@ Material:
     - _EdgeThickness: 0.5
     - _FalloffPower: 1
     m_Colors:
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Color: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 1}
     - _ShadowColor: {r: 0.8, g: 0.8, b: 1, a: 1}

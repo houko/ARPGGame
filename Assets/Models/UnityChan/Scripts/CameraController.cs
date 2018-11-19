@@ -31,6 +31,10 @@ namespace CameraController
 
         private Vector3 oldPos;
 
+        /// <summary>
+        /// 设置焦点
+        /// </summary>
+        /// <param name="name"></param>
         void setupFocusObject(string name)
         {
             GameObject obj = focusObj = new GameObject(name);
