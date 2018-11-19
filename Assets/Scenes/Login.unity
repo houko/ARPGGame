@@ -5983,7 +5983,6 @@ GameObject:
   - component: {fileID: 1662257084}
   - component: {fileID: 1662257083}
   - component: {fileID: 1662257082}
-  - component: {fileID: 1662257081}
   m_Layer: 5
   m_Name: username
   m_TagString: Untagged
@@ -6011,17 +6010,6 @@ RectTransform:
   m_AnchoredPosition: {x: 100, y: 100}
   m_SizeDelta: {x: 230, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1662257081
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1662257079}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0188904044ff43b194a7625792cccf41, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1662257082
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6060,8 +6048,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1662257083}
   m_TextComponent: {fileID: 1773904028}
   m_Placeholder: {fileID: 1609915177}
-  m_ContentType: 0
-  m_InputType: 0
+  m_ContentType: 7
+  m_InputType: 2
   m_AsteriskChar: 42
   m_KeyboardType: 0
   m_LineType: 0
@@ -7063,7 +7051,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 287707802}
-        m_MethodName: SelectRegion
+        m_MethodName: ToLogin
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7189,7 +7177,6 @@ GameObject:
   - component: {fileID: 1835537350}
   - component: {fileID: 1835537349}
   - component: {fileID: 1835537348}
-  - component: {fileID: 1835537347}
   m_Layer: 5
   m_Name: PasswordInputField
   m_TagString: Untagged
@@ -7217,17 +7204,6 @@ RectTransform:
   m_AnchoredPosition: {x: 100, y: 100}
   m_SizeDelta: {x: 230, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1835537347
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1835537345}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0188904044ff43b194a7625792cccf41, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1835537348
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7266,8 +7242,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1835537349}
   m_TextComponent: {fileID: 513081292}
   m_Placeholder: {fileID: 1201232118}
-  m_ContentType: 0
-  m_InputType: 0
+  m_ContentType: 7
+  m_InputType: 2
   m_AsteriskChar: 42
   m_KeyboardType: 0
   m_LineType: 0
