@@ -7,7 +7,7 @@ namespace UI
     {
         private void Start()
         {
-            EventSystem.current.SetSelectedGameObject(transform.gameObject);
+//            EventSystem.current.SetSelectedGameObject(transform.gameObject);
         }
     }
 }
