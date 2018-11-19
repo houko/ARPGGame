@@ -32,7 +32,7 @@ public class LoadingScene : MonoBehaviour
         if (isStart)
         {
             progressBar.value = ao.progress;
-            progressShow.text = (int) ao.progress * 100 + "%";
+            progressShow.text = (int) (ao.progress * 100) + "%";
             if (ao.isDone)
             {
                 progressBar.gameObject.SetActive(false);

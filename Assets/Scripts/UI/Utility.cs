@@ -10,10 +10,7 @@ namespace UI
         /// <param name="rectTrans"></param>
         public static void SetToCenter(RectTransform rectTrans)
         {
-            rectTrans.SetInsetAndSizeFromParentEdge(RectTransform.Edge.Left, 0, 0);
-            rectTrans.SetInsetAndSizeFromParentEdge(RectTransform.Edge.Top, 0, 0);
-            rectTrans.anchorMin = Vector2.zero;
-            rectTrans.anchorMax = Vector2.one;
+            rectTrans.localPosition = Vector3.zero;
         }
     }
 }
