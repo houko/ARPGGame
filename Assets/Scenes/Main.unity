@@ -798,18 +798,20 @@ Prefab:
       propertyPath: m_Name
       value: Character
       objectReference: {fileID: 0}
-    - target: {fileID: 4392354991606996, guid: 3983e97f8d2a1460b9659df56da083f2, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4392354991606996, guid: 3983e97f8d2a1460b9659df56da083f2, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4392354991606996, guid: 3983e97f8d2a1460b9659df56da083f2, type: 2}
+    - target: {fileID: 4141275397752706, guid: 3983e97f8d2a1460b9659df56da083f2, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 12
+      value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 23298092075675148, guid: 3983e97f8d2a1460b9659df56da083f2,
+        type: 2}
+      propertyPath: m_ReceiveShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 33178775215015356, guid: 3983e97f8d2a1460b9659df56da083f2,
+        type: 2}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3983e97f8d2a1460b9659df56da083f2, type: 2}
   m_IsPrefabAsset: 0

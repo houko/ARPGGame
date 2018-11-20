@@ -1096,7 +1096,6 @@ GameObject:
   - component: {fileID: 4141275397752706}
   - component: {fileID: 33178775215015356}
   - component: {fileID: 23298092075675148}
-  - component: {fileID: 136016909815208620}
   m_Layer: 8
   m_Name: Capsule
   m_TagString: Untagged
@@ -3570,7 +3569,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1614289282704936}
   m_LocalRotation: {x: 0.5, y: 0.5, z: -0.5, w: 0.5}
-  m_LocalPosition: {x: -0.5727776, y: 11.711942, z: 0.053423047}
+  m_LocalPosition: {x: 0, y: 12, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4207705204538756}
@@ -5042,7 +5041,7 @@ Camera:
   m_GameObject: {fileID: 1614289282704936}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 2
+  m_ClearFlags: 3
   m_BackGroundColor: {r: 0.6415094, g: 0.6415094, b: 0.6415094, a: 0}
   m_projectionMatrixMode: 1
   m_SensorSize: {x: 36, y: 24}
@@ -5360,19 +5359,6 @@ MonoBehaviour:
   backwardSpeed: 2
   rotateSpeed: 2
   jumpPower: 3
---- !u!136 &136016909815208620
-CapsuleCollider:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1371539717851178}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.5
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!136 &136903882340223772
 CapsuleCollider:
   m_ObjectHideFlags: 1
