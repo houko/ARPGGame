@@ -1,0 +1,206 @@
+fileFormatVersion: 2
+guid: 460076fd8fa3cc543b31c8772fd5b5d0
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: HorRig
+    100002: HorRigHead
+    100004: HorRigLBackLeg1
+    100006: HorRigLBackLeg2
+    100008: HorRigLBackLeg3
+    100010: HorRigLBackLeg4
+    100012: HorRigLBackLegAnkle
+    100014: HorRigLBackLegPlatform
+    100016: HorRigLCenterLeg1
+    100018: HorRigLCenterLeg2
+    100020: HorRigLCenterLeg3
+    100022: HorRigLCenterLeg4
+    100024: HorRigLCenterLegAnkle
+    100026: HorRigLCenterLegPlatform
+    100028: HorRigLFeelerBone001
+    100030: HorRigLFeelerBone002
+    100032: HorRigLFeelerBone003
+    100034: HorRigLFrontLeg1
+    100036: HorRigLFrontLeg2
+    100038: HorRigLFrontLeg3
+    100040: HorRigLFrontLeg4
+    100042: HorRigLFrontLegAnkle
+    100044: HorRigLFrontLegPlatform
+    100046: HorRigLWingBone001
+    100048: HorRigLWingBone002
+    100050: HorRigNeck
+    100052: HorRigRCenterLeg1
+    100054: HorRigRCenterLeg2
+    100056: HorRigRCenterLeg3
+    100058: HorRigRCenterLeg4
+    100060: HorRigRCenterLegAnkle
+    100062: HorRigRCenterLegPlatform
+    100064: HorRigRFeelerBone001
+    100066: HorRigRFeelerBone002
+    100068: HorRigRFeelerBone003
+    100070: HorRigRFrontLeg1
+    100072: HorRigRFrontLeg2
+    100074: HorRigRFrontLeg3
+    100076: HorRigRFrontLeg4
+    100078: HorRigRFrontLegAnkle
+    100080: HorRigRFrontLegPlatform
+    100082: HorRigRibcage
+    100084: HorRigRLeg1
+    100086: HorRigRLeg2
+    100088: HorRigRLeg3
+    100090: HorRigRLeg4
+    100092: HorRigRLegAnkle
+    100094: HorRigRLegPlatform
+    100096: HorRigRWingBone001
+    100098: HorRigRWingBone002
+    100100: HorRigSting
+    100102: HorRigStingBone001
+    100104: HorRigTail1
+    100106: HorRigTail2
+    100108: HorRigTail3
+    100110: Monster Hornet
+    100112: //RootNode
+    400000: HorRig
+    400002: HorRigHead
+    400004: HorRigLBackLeg1
+    400006: HorRigLBackLeg2
+    400008: HorRigLBackLeg3
+    400010: HorRigLBackLeg4
+    400012: HorRigLBackLegAnkle
+    400014: HorRigLBackLegPlatform
+    400016: HorRigLCenterLeg1
+    400018: HorRigLCenterLeg2
+    400020: HorRigLCenterLeg3
+    400022: HorRigLCenterLeg4
+    400024: HorRigLCenterLegAnkle
+    400026: HorRigLCenterLegPlatform
+    400028: HorRigLFeelerBone001
+    400030: HorRigLFeelerBone002
+    400032: HorRigLFeelerBone003
+    400034: HorRigLFrontLeg1
+    400036: HorRigLFrontLeg2
+    400038: HorRigLFrontLeg3
+    400040: HorRigLFrontLeg4
+    400042: HorRigLFrontLegAnkle
+    400044: HorRigLFrontLegPlatform
+    400046: HorRigLWingBone001
+    400048: HorRigLWingBone002
+    400050: HorRigNeck
+    400052: HorRigRCenterLeg1
+    400054: HorRigRCenterLeg2
+    400056: HorRigRCenterLeg3
+    400058: HorRigRCenterLeg4
+    400060: HorRigRCenterLegAnkle
+    400062: HorRigRCenterLegPlatform
+    400064: HorRigRFeelerBone001
+    400066: HorRigRFeelerBone002
+    400068: HorRigRFeelerBone003
+    400070: HorRigRFrontLeg1
+    400072: HorRigRFrontLeg2
+    400074: HorRigRFrontLeg3
+    400076: HorRigRFrontLeg4
+    400078: HorRigRFrontLegAnkle
+    400080: HorRigRFrontLegPlatform
+    400082: HorRigRibcage
+    400084: HorRigRLeg1
+    400086: HorRigRLeg2
+    400088: HorRigRLeg3
+    400090: HorRigRLeg4
+    400092: HorRigRLegAnkle
+    400094: HorRigRLegPlatform
+    400096: HorRigRWingBone001
+    400098: HorRigRWingBone002
+    400100: HorRigSting
+    400102: HorRigStingBone001
+    400104: HorRigTail1
+    400106: HorRigTail2
+    400108: HorRigTail3
+    400110: Monster Hornet
+    400112: //RootNode
+    4300000: Monster Hornet
+    7400000: Take 001
+    9500000: //RootNode
+    11100000: //RootNode
+    13700000: Monster Hornet
+  externalObjects: {}
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.01
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 0
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 0
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 4
+    normalCalculationMode: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  humanoidOversampling: 1
+  additionalBone: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

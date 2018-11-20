@@ -1,0 +1,203 @@
+fileFormatVersion: 2
+guid: b2fcdce9c71fc0446a81095d195c4358
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Plant Monster
+    100002: //RootNode
+    100004: Rig
+    100006: RigLHead
+    100008: RigLHeadDownJaw
+    100010: RigLHeadUpJaw
+    100012: RigLLeg011
+    100014: RigLLeg012
+    100016: RigLLeg01Ankle
+    100018: RigLLeg01Platform
+    100020: RigLLeg021
+    100022: RigLLeg022
+    100024: RigLLeg02Ankle
+    100026: RigLLeg02Platform
+    100028: RigLNeck1
+    100030: RigLNeck2
+    100032: RigLNeck3
+    100034: RigLNeck4
+    100036: RigLNeck5
+    100038: RigLNeck6
+    100040: RigMHead
+    100042: RigMHeadDownJaw
+    100044: RigMHeadUpJaw
+    100046: RigMLeg011
+    100048: RigMLeg012
+    100050: RigMLeg01Ankle
+    100052: RigMLeg01Platform
+    100054: RigMLeg021
+    100056: RigMLeg022
+    100058: RigMLeg02Ankle
+    100060: RigMLeg02Platform
+    100062: RigMNeck1
+    100064: RigMNeck2
+    100066: RigMNeck3
+    100068: RigMNeck4
+    100070: RigMNeck5
+    100072: RigMNeck6
+    100074: RigMNeck7
+    100076: RigPelvis
+    100078: RigRHead
+    100080: RigRHeadDownJaw
+    100082: RigRHeadUpJaw
+    100084: RigRLeg011
+    100086: RigRLeg012
+    100088: RigRLeg01Ankle
+    100090: RigRLeg01Platform
+    100092: RigRLeg1
+    100094: RigRLeg2
+    100096: RigRLegAnkle
+    100098: RigRLegPlatform
+    100100: RigRNeck1
+    100102: RigRNeck2
+    100104: RigRNeck3
+    100106: RigRNeck4
+    100108: RigRNeck5
+    100110: RigRNeck6
+    400000: Plant Monster
+    400002: //RootNode
+    400004: Rig
+    400006: RigLHead
+    400008: RigLHeadDownJaw
+    400010: RigLHeadUpJaw
+    400012: RigLLeg011
+    400014: RigLLeg012
+    400016: RigLLeg01Ankle
+    400018: RigLLeg01Platform
+    400020: RigLLeg021
+    400022: RigLLeg022
+    400024: RigLLeg02Ankle
+    400026: RigLLeg02Platform
+    400028: RigLNeck1
+    400030: RigLNeck2
+    400032: RigLNeck3
+    400034: RigLNeck4
+    400036: RigLNeck5
+    400038: RigLNeck6
+    400040: RigMHead
+    400042: RigMHeadDownJaw
+    400044: RigMHeadUpJaw
+    400046: RigMLeg011
+    400048: RigMLeg012
+    400050: RigMLeg01Ankle
+    400052: RigMLeg01Platform
+    400054: RigMLeg021
+    400056: RigMLeg022
+    400058: RigMLeg02Ankle
+    400060: RigMLeg02Platform
+    400062: RigMNeck1
+    400064: RigMNeck2
+    400066: RigMNeck3
+    400068: RigMNeck4
+    400070: RigMNeck5
+    400072: RigMNeck6
+    400074: RigMNeck7
+    400076: RigPelvis
+    400078: RigRHead
+    400080: RigRHeadDownJaw
+    400082: RigRHeadUpJaw
+    400084: RigRLeg011
+    400086: RigRLeg012
+    400088: RigRLeg01Ankle
+    400090: RigRLeg01Platform
+    400092: RigRLeg1
+    400094: RigRLeg2
+    400096: RigRLegAnkle
+    400098: RigRLegPlatform
+    400100: RigRNeck1
+    400102: RigRNeck2
+    400104: RigRNeck3
+    400106: RigRNeck4
+    400108: RigRNeck5
+    400110: RigRNeck6
+    4300000: Plant Monster
+    9500000: //RootNode
+    11100000: //RootNode
+    13700000: Plant Monster
+  externalObjects: {}
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.01
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 0
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 0
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 4
+    normalCalculationMode: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  humanoidOversampling: 1
+  additionalBone: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
