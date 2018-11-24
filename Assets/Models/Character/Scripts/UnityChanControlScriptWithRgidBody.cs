@@ -17,8 +17,6 @@ public class UnityChanControlScriptWithRgidBody : MonoBehaviour
 
     public bool useCurves = true; // Mecanimでカーブ調整を使うか設定する
 
-    public Joystick joystick;
-
     // このスイッチが入っていないとカーブは使われない
     public float useCurvesHeight = 0.5f; // カーブ補正の有効高さ（地面をすり抜けやすい時には大きくする）
 
