@@ -37,7 +37,7 @@ public class QuickTwist : QuickBase {
 
 	#region MonoBehaviour callback
 	public QuickTwist(){
-		quickActionName = "QuickTwist"+ GetInstanceID().ToString();
+			quickActionName = "QuickTwist"+ System.Guid.NewGuid().ToString().Substring(0,7);
 	}
 
 	public override void OnEnable(){

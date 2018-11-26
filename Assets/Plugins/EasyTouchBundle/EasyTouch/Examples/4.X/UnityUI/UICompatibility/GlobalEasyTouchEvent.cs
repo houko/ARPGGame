@@ -22,6 +22,8 @@ public class GlobalEasyTouchEvent : MonoBehaviour {
 	}
 
 	void On_TouchDown (Gesture gesture){
+        Debug.Log("ok");
+
 		statText.transform.SetAsFirstSibling();
 
 		if (gesture.pickedUIElement!=null){

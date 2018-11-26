@@ -7,6 +7,39 @@ http://www.thehedgehogteam.com/Forum/
 		the.hedgehog.team@gmail.com
 
 **********************************************
+EasyTouch 5.0.12
+===============
+* Fixe warning : Unable to find style 'As TextArea' in skin 'DarkSkin' Layout when EasyTouch gameobject is selected in Unity 2017.1.0f3
+
+EasyTouch 5.0.11
+===============
+* Fixe PlayMaker addon
+
+EasyTouch 5.0.10
+===============
+* Fixe Quick Gesture since 5.0.9
+
+EasyTouch 5.0.9
+===============
+* The current gesture is equal to Null when nothing happening, to prevent CG collect
+
+EasyTouch 5.0.8
+===============
+* Fixe warning on Unity 5.4.X
+
+EasyTouch 5.0.7
+===============
+* Fixe error on Unity 5.4.X
+
+EasyTouch 5.0.6
+===============
+* Quick gesture use System GUID instead Unity GUID to prevent error in constructor since Unity 5.4 
+* This QuickSwipe event unsubscribe
+
+EasyTouch 5.0.5
+===============
+* Fixe bug : Mouse & touch are correctly managed at the same time on WIN_RT
+
 EasyTouch 5.0.4
 ===============
 * Fixe multi-touch on some specific platform (some platform as Window 10 don't  support multi-touch on Editor, but only in build)

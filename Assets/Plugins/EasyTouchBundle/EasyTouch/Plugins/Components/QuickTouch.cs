@@ -35,14 +35,15 @@ public class QuickTouch : QuickBase {
 
 	#region Monobehavior CallBack
 	public QuickTouch(){
-		quickActionName = "QuickTouch"+ GetInstanceID().ToString();
+			quickActionName = "QuickTouch"+ System.Guid.NewGuid().ToString().Substring(0,7);
 	}
 	#endregion		
 
 	void Update(){
 		currentGesture = EasyTouch.current;
 		
-		if (!is2Finger){
+		if (!is2Finger && currentGesture!=null)
+            {
 			
 			// GetIndex at touch start
 			if (currentGesture.type == EasyTouch.EvtType.On_TouchStart && fingerIndex == -1 && IsOverMe(currentGesture)){
@@ -79,17 +80,19 @@ public class QuickTouch : QuickBase {
 			}
 		}
 		else{
-			if (currentGesture.type == EasyTouch.EvtType.On_TouchStart2Fingers && actionTriggering == ActionTriggering.Start){
-				DoAction( currentGesture);
-			}
-			
-			if (currentGesture.type == EasyTouch.EvtType.On_TouchDown2Fingers && actionTriggering == ActionTriggering.Down){
-				DoAction( currentGesture);
-			}
-			
-			if (currentGesture.type == EasyTouch.EvtType.On_TouchUp2Fingers && actionTriggering == ActionTriggering.Up){
-				DoAction( currentGesture);
-			}
+                if (currentGesture != null){
+                    if (currentGesture.type == EasyTouch.EvtType.On_TouchStart2Fingers && actionTriggering == ActionTriggering.Start) {
+                        DoAction(currentGesture);
+                    }
+
+                    if (currentGesture.type == EasyTouch.EvtType.On_TouchDown2Fingers && actionTriggering == ActionTriggering.Down) {
+                        DoAction(currentGesture);
+                    }
+
+                    if (currentGesture.type == EasyTouch.EvtType.On_TouchUp2Fingers && actionTriggering == ActionTriggering.Up) {
+                        DoAction(currentGesture);
+                    }
+                }
 		}
 	}
 

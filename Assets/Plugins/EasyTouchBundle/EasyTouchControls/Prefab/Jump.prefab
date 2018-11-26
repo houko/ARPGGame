@@ -3,9 +3,9 @@
 --- !u!1 &111894
 GameObject:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 6
+  serializedVersion: 5
   m_Component:
   - component: {fileID: 22411526}
   - component: {fileID: 11446900}
@@ -21,9 +21,9 @@ GameObject:
 --- !u!1 &139752
 GameObject:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 6
+  serializedVersion: 5
   m_Component:
   - component: {fileID: 22473366}
   - component: {fileID: 22345584}
@@ -39,7 +39,7 @@ GameObject:
 --- !u!114 &11420752
 MonoBehaviour:
   m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 111894}
   m_Enabled: 1
@@ -66,7 +66,7 @@ MonoBehaviour:
 --- !u!114 &11430242
 MonoBehaviour:
   m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 139752}
   m_Enabled: 1
@@ -82,7 +82,7 @@ MonoBehaviour:
 --- !u!114 &11446900
 MonoBehaviour:
   m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 111894}
   m_Enabled: 1
@@ -97,12 +97,14 @@ MonoBehaviour:
   _activated: 1
   enableCamera: 0
   cameraMode: 0
+  camTargetTag: Player
   autoLinkTagCam: 1
   autoCamTag: MainCamera
   cameraTransform: {fileID: 0}
   cameraTargetMode: 0
   enableWallDetection: 0
   wallLayer:
+    serializedVersion: 2
     m_Bits: 0
   cameraLookAt: {fileID: 0}
   followOffset: {x: 0, y: 6, z: -6}
@@ -159,9 +161,11 @@ MonoBehaviour:
     deadValue: 0.1
     valueMethod: 0
     curveValue:
+      serializedVersion: 2
       m_Curve: []
       m_PreInfinity: 2
       m_PostInfinity: 2
+      m_RotationOrder: 4
     isEnertia: 0
     inertia: 0
     inertiaThreshold: 0.08
@@ -194,21 +198,13 @@ MonoBehaviour:
     showInertiaInspector: 0
     showSimulatinInspector: 0
   normalSprite: {fileID: 21300006, guid: becfdeef1534456438d787466a94d207, type: 3}
-  normalColor:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
+  normalColor: {r: 1, g: 1, b: 1, a: 1}
   pressedSprite: {fileID: 21300008, guid: becfdeef1534456438d787466a94d207, type: 3}
-  pressedColor:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
+  pressedColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &11495082
 MonoBehaviour:
   m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 139752}
   m_Enabled: 1
@@ -229,14 +225,13 @@ MonoBehaviour:
 --- !u!222 &22203078
 CanvasRenderer:
   m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 111894}
-  m_CullTransparentMesh: 0
 --- !u!223 &22345584
 Canvas:
   m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 139752}
   m_Enabled: 1
@@ -256,7 +251,7 @@ Canvas:
 --- !u!224 &22411526
 RectTransform:
   m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 111894}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -274,7 +269,7 @@ RectTransform:
 --- !u!224 &22473366
 RectTransform:
   m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 139752}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -298,6 +293,6 @@ Prefab:
     m_TransformParent: {fileID: 0}
     m_Modifications: []
     m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 0}
+  m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 139752}
-  m_IsPrefabAsset: 1
+  m_IsPrefabParent: 1

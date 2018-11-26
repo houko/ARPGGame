@@ -32,51 +32,67 @@ public class QuickLongTap : QuickBase {
 	#endregion
 
 	public QuickLongTap(){
-		quickActionName = "QuickLongTap"+ GetInstanceID().ToString();
+			quickActionName = "QuickLongTap"+ System.Guid.NewGuid().ToString().Substring(0,7);
 	}
 
 	void Update(){
 		currentGesture = EasyTouch.current;
-		
-		if (!is2Finger){
-			
-			if (currentGesture.type == EasyTouch.EvtType.On_TouchStart && fingerIndex == -1 && IsOverMe(currentGesture)){
-				fingerIndex = currentGesture.fingerIndex;
-			}
-			
-			if (currentGesture.type == EasyTouch.EvtType.On_LongTapStart && actionTriggering == ActionTriggering.Start){
-				if (currentGesture.fingerIndex == fingerIndex || isMultiTouch){
 
-					DoAction( currentGesture);
-				}
-			}
-			
-			if (currentGesture.type == EasyTouch.EvtType.On_LongTap  && actionTriggering == ActionTriggering.InProgress){
-				if (currentGesture.fingerIndex == fingerIndex || isMultiTouch){
-					DoAction( currentGesture);
-				}
-			}
-			
-			if (currentGesture.type == EasyTouch.EvtType.On_LongTapEnd && actionTriggering == ActionTriggering.End){
-				if (currentGesture.fingerIndex == fingerIndex || isMultiTouch){
-					DoAction( currentGesture);
-					fingerIndex =-1;
-				}
-			}
-		}
-		else{
-			if (currentGesture.type == EasyTouch.EvtType.On_LongTapStart2Fingers && actionTriggering == ActionTriggering.Start){
-				DoAction( currentGesture);
-			}
-			
-			if (currentGesture.type == EasyTouch.EvtType.On_LongTap2Fingers && actionTriggering == ActionTriggering.InProgress){
-				DoAction( currentGesture);
-			}
-			
-			if (currentGesture.type == EasyTouch.EvtType.On_LongTapEnd2Fingers && actionTriggering == ActionTriggering.End){
-				DoAction( currentGesture);
-			}
-		}
+            if (currentGesture != null)
+            {
+
+                if (!is2Finger)
+                {
+
+                    if (currentGesture.type == EasyTouch.EvtType.On_TouchStart && fingerIndex == -1 && IsOverMe(currentGesture))
+                    {
+                        fingerIndex = currentGesture.fingerIndex;
+                    }
+
+                    if (currentGesture.type == EasyTouch.EvtType.On_LongTapStart && actionTriggering == ActionTriggering.Start)
+                    {
+                        if (currentGesture.fingerIndex == fingerIndex || isMultiTouch)
+                        {
+
+                            DoAction(currentGesture);
+                        }
+                    }
+
+                    if (currentGesture.type == EasyTouch.EvtType.On_LongTap && actionTriggering == ActionTriggering.InProgress)
+                    {
+                        if (currentGesture.fingerIndex == fingerIndex || isMultiTouch)
+                        {
+                            DoAction(currentGesture);
+                        }
+                    }
+
+                    if (currentGesture.type == EasyTouch.EvtType.On_LongTapEnd && actionTriggering == ActionTriggering.End)
+                    {
+                        if (currentGesture.fingerIndex == fingerIndex || isMultiTouch)
+                        {
+                            DoAction(currentGesture);
+                            fingerIndex = -1;
+                        }
+                    }
+                }
+                else
+                {
+                    if (currentGesture.type == EasyTouch.EvtType.On_LongTapStart2Fingers && actionTriggering == ActionTriggering.Start)
+                    {
+                        DoAction(currentGesture);
+                    }
+
+                    if (currentGesture.type == EasyTouch.EvtType.On_LongTap2Fingers && actionTriggering == ActionTriggering.InProgress)
+                    {
+                        DoAction(currentGesture);
+                    }
+
+                    if (currentGesture.type == EasyTouch.EvtType.On_LongTapEnd2Fingers && actionTriggering == ActionTriggering.End)
+                    {
+                        DoAction(currentGesture);
+                    }
+                }
+            }
 	}
 
 	void DoAction(Gesture gesture){

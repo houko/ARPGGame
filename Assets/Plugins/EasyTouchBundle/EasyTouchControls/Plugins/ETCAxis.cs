@@ -374,8 +374,8 @@ public class ETCAxis {
 
 				}
 				else{
-					//realValue = deadCurve.Evaluate( Mathf.Abs(realValue)) * Mathf.Sign( realValue);
-					realValue = curveValue.Evaluate( realValue);
+                    //realValue = deadCurve.Evaluate( Mathf.Abs(realValue)) * Mathf.Sign( realValue);
+                    realValue = curveValue.Evaluate(Mathf.Abs(realValue)) * Mathf.Sign(realValue);
 				}
 			}
 

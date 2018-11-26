@@ -39,7 +39,7 @@ public class QuickDrag: QuickBase {
 	
 	#region Monobehaviour CallBack
 	public QuickDrag(){
-		quickActionName = "QuickDrag"+ GetInstanceID().ToString();
+			quickActionName = "QuickDrag"+ System.Guid.NewGuid().ToString().Substring(0,7);
 		axesAction = AffectedAxesAction.XY;
 	}
 

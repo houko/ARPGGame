@@ -484,8 +484,6 @@ public class EasyTouch : MonoBehaviour {
 			if (Application.isPlaying && Input.touchCount==0){
 				enableRemote = false;
 			}
-
-	
 			//#endif
 
 			int i;
@@ -499,7 +497,8 @@ public class EasyTouch : MonoBehaviour {
 			}
 
 			// Get touches		
-			#if (((UNITY_ANDROID || UNITY_IOS || UNITY_WINRT || UNITY_BLACKBERRY || UNITY_TVOS) && !UNITY_EDITOR))
+			//#if (((UNITY_ANDROID || UNITY_IOS || UNITY_WINRT || UNITY_BLACKBERRY || UNITY_TVOS) && !UNITY_EDITOR))
+				#if (((UNITY_ANDROID || UNITY_IOS || UNITY_BLACKBERRY || UNITY_TVOS || UNITY_PSP2) && !UNITY_EDITOR))
 				UpdateTouches(true, count);
 			#else
 				UpdateTouches(false, count);
@@ -524,6 +523,7 @@ public class EasyTouch : MonoBehaviour {
 		}
 	}
 
+
 	void LateUpdate(){
 
 		// single gesture
@@ -531,7 +531,7 @@ public class EasyTouch : MonoBehaviour {
 			_currentGestures.RemoveAt(0);	
 		}
 		else{
-			_currentGestures[0] = new Gesture();
+                _currentGestures[0] = null;// new Gesture();
 		}
 		_currentGesture = _currentGestures[0];
 
@@ -543,6 +543,7 @@ public class EasyTouch : MonoBehaviour {
 	void UpdateTouches(bool realTouch, int touchCount){
 		 
 		fingers.CopyTo( tmpArray,0);
+		
 		
 		if (realTouch || enableRemote){
 			ResetTouches();
@@ -583,7 +584,6 @@ public class EasyTouch : MonoBehaviour {
 				
 				fingers[i].touchCount = touchCount;		
 
-#if UNITY_5_3
 				fingers[i].altitudeAngle = touch.altitudeAngle;
 				fingers[i].azimuthAngle = touch.azimuthAngle;
 				fingers[i].maximumPossiblePressure = touch.maximumPossiblePressure;
@@ -591,7 +591,7 @@ public class EasyTouch : MonoBehaviour {
 				fingers[i].radius = touch.radius;
 				fingers[i].radiusVariance = touch.radiusVariance;
 				fingers[i].touchType = touch.type;
-#endif
+
 			}
 		}
 		else{
@@ -1550,7 +1550,7 @@ public class EasyTouch : MonoBehaviour {
 
 		// Direct Acces 
 		int result = _currentGestures.FindIndex( delegate(Gesture obj) {
-			return obj.type == gesture.type && obj.fingerIndex == gesture.fingerIndex;
+			return obj!=null && obj.type == gesture.type && obj.fingerIndex == gesture.fingerIndex;
 		}
 		);
 

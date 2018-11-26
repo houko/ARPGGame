@@ -2,7 +2,7 @@
 using System.Collections;
 using UnityEditor;
 using HedgehogTeam.EasyTouch;
-#if UNITY_5_3
+#if UNITY_5_3_OR_NEWER
 using UnityEditor.SceneManagement;
 #endif
 
@@ -36,7 +36,7 @@ public class QuickLongTapInspector : Editor {
 		
 		if (GUI.changed){
 			EditorUtility.SetDirty(t);
-			#if UNITY_5_3
+			#if UNITY_5_3_OR_NEWER
 			EditorSceneManager.MarkSceneDirty( EditorSceneManager.GetActiveScene());
 			#endif
 		}

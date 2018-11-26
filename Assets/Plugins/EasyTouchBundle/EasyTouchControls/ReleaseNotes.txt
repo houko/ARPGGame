@@ -7,6 +7,16 @@ http://www.thehedgehogteam.com/Forum/
 		the.hedgehog.team@gmail.com
 
 **********************************************
+
+EasyTouch Controls 2.0.9
+========================
+* Fixe warning : Unable to find style 'As TextArea' in skin 'DarkSkin' Layout when EasyTouch gameobject is selected in Unity 2017.1.0f3
+* Remove CG alloc from Virtual Control
+
+EasyTouch Controls 2.0.8
+========================
+* fixed bug : Dead zone is correctly applied with curve
+
 EasyTouch Controls 2.0.7
 ========================
 * fixed bug : Joystick thumb joystick remained visible sometimes in dynamic mode.

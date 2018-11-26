@@ -37,7 +37,7 @@ public class QuickSwipe : QuickBase {
 
 	#region MonoBehaviour callback
 	public QuickSwipe(){
-		quickActionName = "QuickSwipe" + GetInstanceID().ToString();
+		quickActionName = "QuickSwipe" + System.Guid.NewGuid().ToString().Substring(0,7);
 	}
 
 	public override void OnEnable(){
@@ -58,7 +58,9 @@ public class QuickSwipe : QuickBase {
 	}
 	
 	void UnsubscribeEvent(){
+		EasyTouch.On_Drag -= On_Drag;
 		EasyTouch.On_Swipe -= On_Swipe;
+		EasyTouch.On_DragEnd -= On_DragEnd;
 		EasyTouch.On_SwipeEnd -= On_SwipeEnd;
 	}
 	#endregion

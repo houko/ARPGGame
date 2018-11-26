@@ -37,7 +37,7 @@ public class QuickPinch : QuickBase {
 	
 	#region MonoBehaviour callback
 	public QuickPinch(){
-		quickActionName = "QuickPinch"+ GetInstanceID().ToString();
+			quickActionName = "QuickPinch"+ System.Guid.NewGuid().ToString().Substring(0,7);
 	}
 	
 	public override void OnEnable(){

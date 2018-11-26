@@ -29,7 +29,7 @@ public class BaseFinger{
 	public bool isOverGui;
 	public GameObject pickedUIElement;
 
-	#if UNITY_5_3
+
 	public float altitudeAngle;
 	public float azimuthAngle;
 	public float maximumPossiblePressure;
@@ -38,7 +38,7 @@ public class BaseFinger{
 	public float radius;
 	public float radiusVariance;
 	public TouchType touchType;
-	#endif
+
 	
 
 	public Gesture GetGesture(){
@@ -59,7 +59,6 @@ public class BaseFinger{
 
 		gesture.pickedUIElement = pickedUIElement;
 
-		#if UNITY_5_3
 		gesture.altitudeAngle = altitudeAngle;
 		gesture.azimuthAngle = azimuthAngle;
 		gesture.maximumPossiblePressure = maximumPossiblePressure;
@@ -67,7 +66,6 @@ public class BaseFinger{
 		gesture.radius = radius;
 		gesture.radiusVariance = radiusVariance;
 		gesture.touchType = touchType;
-		#endif
 
 		return gesture;
 	}

@@ -34,7 +34,7 @@ public class QuickEnterOverExist : QuickBase {
 
 	#region MonoBehaviour callback
 	public QuickEnterOverExist(){
-		quickActionName = "QuickEnterOverExit"+ GetInstanceID().ToString();
+			quickActionName = "QuickEnterOverExit"+ System.Guid.NewGuid().ToString().Substring(0,7);
 	}
 
 	void Awake(){

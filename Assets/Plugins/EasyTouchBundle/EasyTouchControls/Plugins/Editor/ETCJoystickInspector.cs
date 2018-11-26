@@ -10,7 +10,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
 using UnityEditor;
-#if UNITY_5_3
+#if UNITY_5_3_OR_NEWER
 using UnityEditor.SceneManagement;
 #endif
 
@@ -392,7 +392,7 @@ public class ETCJoystickInspector:Editor  {
 
 		if (GUI.changed){
 			EditorUtility.SetDirty(t);
-			#if UNITY_5_3
+			#if UNITY_5_3_OR_NEWER
 			EditorSceneManager.MarkSceneDirty( EditorSceneManager.GetActiveScene());
 			#endif
 		}

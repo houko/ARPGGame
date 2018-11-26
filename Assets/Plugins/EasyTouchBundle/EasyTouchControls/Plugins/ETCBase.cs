@@ -215,14 +215,18 @@ public abstract class ETCBase : MonoBehaviour {
 	public virtual void Update(){
 
 		if (!useFixedUpdate){
-			StartCoroutine ("UpdateVirtualControl");
-		}
+           // StartCoroutine (UpdateVirtualControl());
+            DoActionBeforeEndOfFrame();
+            
+        }
 	}
 	
 	public virtual void FixedUpdate(){
 		if (useFixedUpdate){
-			StartCoroutine ("FixedUpdateVirtualControl");
-		}
+            //StartCoroutine (FixedUpdateVirtualControl());
+           DoActionBeforeEndOfFrame();
+            //UpdateControlState();
+        }
 	}
 
 	public virtual void LateUpdate(){
@@ -246,7 +250,9 @@ public abstract class ETCBase : MonoBehaviour {
 				break;
 			}
 		}
-	}
+
+        UpdateControlState();
+    }
 	#endregion
 
 	#region Virtual & public

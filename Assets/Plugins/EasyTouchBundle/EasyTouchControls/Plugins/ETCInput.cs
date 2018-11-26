@@ -283,7 +283,16 @@ public class ETCInput : MonoBehaviour{
 		}
 	}
 	
-	public static void SetButtonPressedSprite(string ctrlName, Sprite spr,Color color = default(Color)){
+	public static void SetButtonSprite(string ctrlName, Sprite sprNormal,Sprite sprPress,Color color = default(Color)){
+		if (ETCInput.instance.controls.TryGetValue( ctrlName, out control)){
+			ETCButton btn = control.GetComponent<ETCButton>();
+			btn.normalSprite = sprNormal;
+			btn.normalColor = color;
+			btn.pressedColor = color;
+			btn.pressedSprite = sprPress;
+
+			SetControlSprite( ctrlName,sprNormal,color);
+		}
 	}
 
 	// Axes

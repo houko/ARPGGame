@@ -32,7 +32,7 @@ public class ETCGuiTools{
 		
 		GUILayout.BeginHorizontal();
 		GUILayout.Space(padding);
-		EditorGUILayout.BeginHorizontal("As TextArea", GUILayout.MinHeight(10f));
+		EditorGUILayout.BeginHorizontal("TextArea", GUILayout.MinHeight(10f));
 		GUILayout.BeginVertical();
 		GUILayout.Space(2f);
 		

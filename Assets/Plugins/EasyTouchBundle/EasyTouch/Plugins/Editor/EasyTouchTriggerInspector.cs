@@ -5,7 +5,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Reflection;
 using HedgehogTeam.EasyTouch;
-#if UNITY_5_3
+#if UNITY_5_3_OR_NEWER
 using UnityEditor.SceneManagement;
 #endif
 
@@ -50,7 +50,7 @@ public class EasyTouchTriggerInspector : Editor {
 
 		if (GUI.changed){
 			EditorUtility.SetDirty(t);
-			#if UNITY_5_3
+			#if UNITY_5_3_OR_NEWER
 			EditorSceneManager.MarkSceneDirty( EditorSceneManager.GetActiveScene());
 			#endif
 		}
