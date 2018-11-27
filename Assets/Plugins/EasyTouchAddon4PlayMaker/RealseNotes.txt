@@ -1,0 +1,21 @@
+**********************************************
+				EASY TOUCH 5 Add-on
+				
+Copyright © 2016 The Hedgehog Team
+http://www.thehedgehogteam.com/Forum/
+
+		the.hedgehog.team@gmail.com
+
+**********************************************
+
+PlayMaker Add-on 1.0.2
+=======================
+- EasyTouchObjectProxy has a new inspector parameter to enable/disable Scene event (false by default)
+
+PlayMaker Add-on 1.0.1
+=======================
+- Bug fixed : EasyTouchSceneProxy component executed during play time into the editor
+
+PlayMaker Add-on 1.0.0
+=======================
+- Initial release
