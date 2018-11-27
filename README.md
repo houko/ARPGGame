@@ -1,6 +1,6 @@
 # RPG游戏
 
-![logo](/screenshot/Logo.png)
+![logo](/screenshot/icon.png)
 ![launch](/screenshot/Launch.png)
 ![login](/screenshot/Login.png)
 ![Server](/screenshot/Server.png)
