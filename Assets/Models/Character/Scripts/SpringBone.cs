@@ -32,7 +32,7 @@ namespace UnityChan
 		public float dragForce = 0.4f;
 		public Vector3 springForce = new Vector3 (0.0f, -0.0001f, 0.0f);
 		public SpringCollider[] colliders;
-		public bool debug = true;
+		private bool debug = false;
 		//Kobayashi:Thredshold Starting to activate activeRatio
 		public float threshold = 0.01f;
 		private float springLength;
