@@ -4998,6 +4998,14 @@ Prefab:
       propertyPath: axisY.axisInfluenced
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 11481510, guid: c589025ecb191c64d94887d0e12e0111, type: 2}
+      propertyPath: axis.name
+      value: Jump
+      objectReference: {fileID: 0}
+    - target: {fileID: 183252, guid: c589025ecb191c64d94887d0e12e0111, type: 2}
+      propertyPath: m_Name
+      value: Jump
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 11402914, guid: c589025ecb191c64d94887d0e12e0111, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: c589025ecb191c64d94887d0e12e0111, type: 2}
@@ -20017,6 +20025,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1985466795}
   - component: {fileID: 1985466796}
+  - component: {fileID: 1985466797}
   m_Layer: 0
   m_Name: CharacterContainer
   m_TagString: Player
@@ -20058,6 +20067,18 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0.8, z: 0}
+--- !u!114 &1985466797
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1985466794}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4427bc6dfc9c4cfeb171c375aef2c31d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animSpeed: 1.5
 --- !u!1 &1990536863
 GameObject:
   m_ObjectHideFlags: 0
