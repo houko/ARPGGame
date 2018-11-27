@@ -33,5 +33,5 @@ Material:
     m_Floats:
     - _FalloffPower: 1
     m_Colors:
-    - _Color: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 1}
+    - _Color: {r: 0.70980394, g: 0.70980394, b: 0.70980394, a: 1}
     - _ShadowColor: {r: 0.8, g: 0.8, b: 1, a: 1}
