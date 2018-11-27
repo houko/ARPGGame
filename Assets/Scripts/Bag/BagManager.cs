@@ -12,25 +12,25 @@ using UnityEngine;
 
 public class BagManager : MonoBehaviour
 {
-    private static BagManager _instance;
-
-    private void Awake()
-    {
-        ParseJson();
-    }
-
-    public void ParseJson()
-    {
-        string json = File.ReadAllText(Application.streamingAssetsPath + "/item.json");
-        ItemList itemList = JsonUtility.FromJson<ItemList>(json);
-        foreach (var item in itemList.items)
-        {
-            Debug.Log(item.name);
-        }
-    }
-
-    public static BagManager Instance()
-    {
-        return _instance ? _instance : GameObject.Find("BagManager").GetComponent<BagManager>();
-    }
+//    private static BagManager _instance;
+//
+//    private void Awake()
+//    {
+//        ParseJson();
+//    }
+//
+//    public void ParseJson()
+//    {
+//        string json = File.ReadAllText(Application.streamingAssetsPath + "/item.json");
+//        ItemList itemList = JsonUtility.FromJson<ItemList>(json);
+//        foreach (var item in itemList.items)
+//        {
+//            Debug.Log(item.name);
+//        }
+//    }
+//
+//    public static BagManager Instance()
+//    {
+//        return _instance ? _instance : GameObject.Find("BagManager").GetComponent<BagManager>();
+//    }
 }

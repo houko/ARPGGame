@@ -1,160 +1,102 @@
-﻿//CameraController.cs for UnityChan
-//Original Script is here:
-//TAK-EMI / CameraController.cs
-//https://gist.github.com/TAK-EMI/d67a13b6f73bed32075d
-//https://twitter.com/TAK_EMI
-//
-//Revised by N.Kobayashi 2014/5/15 
-//Change : To prevent rotation flips on XY plane, use Quaternion in cameraRotate()
-//Change : Add the instrustion window
-//Change : Add the operation for Mac
-//
-
-
+﻿using HedgehogTeam.EasyTouch;
 using UnityEngine;
 
 namespace CameraController
 {
-    enum MouseButtonDown
-    {
-        MBD_LEFT = 0,
-        MBD_RIGHT,
-        MBD_MIDDLE
-    }
-
     public class CameraController : MonoBehaviour
     {
-        [SerializeField] private Vector3 focus = Vector3.zero;
-        [SerializeField] private GameObject focusObj;
+        //摄像机对准目标
+        private GameObject mTarget;
 
-        public bool showInstWindow = true;
+        //移动速度
+        public float moveSpeed;
 
-        private Vector3 oldPos;
+        //缩放速度
+        public float scaleSpeed;
+
+        //摄像机与目标位置偏移
+        private Vector3 mOffset;
+
+        //单例
+        public static CameraController _instance;
+
+
+        private void OnEnable()
+        {
+            EasyTouch.On_Swipe += On_Swipe;
+            EasyTouch.On_Drag += On_Drag;
+            EasyTouch.On_Pinch += On_Pinch;
+        }
 
         /// <summary>
-        /// 设置焦点
+        /// 初始化
         /// </summary>
-        /// <param name="name"></param>
-        void setupFocusObject(string name)
+        private void Awake()
         {
-            GameObject obj = focusObj = new GameObject(name);
-            obj.transform.position = focus;
-            obj.transform.LookAt(transform.position);
+            _instance = this;
         }
 
-        void Start()
+        private void Start()
         {
-            if (focusObj == null)
-                setupFocusObject("CameraFocusObject");
-
-            Transform trans = transform;
-            transform.parent = focusObj.transform;
-
-            trans.LookAt(focus);
+            mTarget = GameObject.FindWithTag("Player");
+            //初始化摄像机与目标位置偏移
+            mOffset = transform.position - mTarget.transform.position;
         }
 
-//		void Update ()
-//		{
-//			this.mouseEvent();
-//		}
 
-//		//Show Instrustion Window
-//		void OnGUI()
-//		{
-//			if(showInstWindow){
-//				GUI.Box(new Rect(Screen.width -210, Screen.height - 100, 200, 90), "Camera Operations");
-//				GUI.Label(new Rect(Screen.width -200, Screen.height - 80, 200, 30),"RMB / Alt+LMB: Tumble");
-//				GUI.Label(new Rect(Screen.width -200, Screen.height - 60, 200, 30),"MMB / Alt+Cmd+LMB: Track");
-//				GUI.Label(new Rect(Screen.width -200, Screen.height - 40, 200, 30),"Wheel / 2 Fingers Swipe: Dolly");
-//			}
-//
-//		}
-
-//		void mouseEvent()
-//		{
-//			float delta = Input.GetAxis("Mouse ScrollWheel");
-//			if (Math.Abs(delta) > 0f)
-//				this.mouseWheelEvent(delta);
-//
-//			if (Input.GetMouseButtonDown((int)MouseButtonDown.MBD_LEFT) ||
-//				Input.GetMouseButtonDown((int)MouseButtonDown.MBD_MIDDLE) ||
-//				Input.GetMouseButtonDown((int)MouseButtonDown.MBD_RIGHT))
-//				this.oldPos = Input.mousePosition;
-//
-//			this.mouseDragEvent(Input.mousePosition);
-//
-//			return;
-//		}
-
-//		void mouseDragEvent(Vector3 mousePos)
-//		{
-//			Vector3 diff = mousePos - oldPos;
-//
-//			if(Input.GetMouseButton((int)MouseButtonDown.MBD_LEFT))
-//			{
-//				//Operation for Mac : "Left Alt + Left Command + LMB Drag" is Track
-//				if(Input.GetKey(KeyCode.LeftAlt) && Input.GetKey(KeyCode.LeftCommand))
-//				{
-//					if (diff.magnitude > Vector3.kEpsilon)
-//						cameraTranslate(-diff / 100.0f);
-//				}
-//				//Operation for Mac : "Left Alt + LMB Drag" is Tumble
-//				else if (Input.GetKey(KeyCode.LeftAlt))
-//				{
-//					if (diff.magnitude > Vector3.kEpsilon)
-//						cameraRotate(new Vector3(diff.y, diff.x, 0.0f));
-//				}
-//				//Only "LMB Drag" is no action.
-//			}
-//			//Track
-//			else if (Input.GetMouseButton((int)MouseButtonDown.MBD_MIDDLE))
-//			{
-//				if (diff.magnitude > Vector3.kEpsilon)
-//					cameraTranslate(-diff / 100.0f);
-//			}
-//			//Tumble
-//			else if (Input.GetMouseButton((int)MouseButtonDown.MBD_RIGHT))
-//			{
-//				if (diff.magnitude > Vector3.kEpsilon)
-//					cameraRotate(new Vector3(diff.y, diff.x, 0.0f));
-//			}
-//				
-//			oldPos = mousePos;
-//		}
-//
-//		//Dolly
-//		public void mouseWheelEvent(float delta)
-//		{
-//			Vector3 focusToPosition = transform.position - focus;
-//
-//			Vector3 post = focusToPosition * (1.0f + delta);
-//
-//			if (post.magnitude > 0.01)
-//				transform.position = focus + post;
-//		}
-
-        void cameraTranslate(Vector3 vec)
+        /// <summary>
+        /// 清除注册事件
+        /// </summary>
+        private void OnDestroy()
         {
-            Transform focusTrans = focusObj.transform;
-
-            vec.x *= -1;
-
-            focusTrans.Translate(Vector3.right * vec.x);
-            focusTrans.Translate(Vector3.up * vec.y);
-
-            focus = focusTrans.position;
+            EasyTouch.On_Swipe -= On_Swipe;
+            EasyTouch.On_Drag -= On_Drag;
         }
 
-        public void cameraRotate(Vector3 eulerAngle)
+        /// <summary>
+        /// 拖动事件
+        /// </summary>
+        /// <param name="gesture"></param>
+        private void On_Drag(Gesture gesture)
         {
-            //Use Quaternion to prevent rotation flips on XY plane
-            Quaternion q = Quaternion.identity;
+            On_Swipe(gesture);
+        }
 
-            Transform focusTrans = focusObj.transform;
-            focusTrans.localEulerAngles = focusTrans.localEulerAngles + eulerAngle;
 
-            //Change this.transform.LookAt(this.focus) to q.SetLookRotation(this.focus)
-            q.SetLookRotation(focus);
+        /// <summary>
+        /// 控制摄像机锁定目标玩家
+        /// </summary>
+        public void LockTarget()
+        {
+            //目标不为空则移动摄像机
+            if (mTarget != null)
+            {
+                //计算摄像机当前位置
+                Vector3 currentPosition = mTarget.transform.position + mOffset;
+                //移动摄像机
+                transform.position = currentPosition;
+            }
+        }
+
+
+        /// <summary>
+        ///控制视野移动
+        /// </summary>
+        /// <param name="gesture"></param>
+        private void On_Swipe(Gesture gesture)
+        {
+            transform.Translate(Vector3.left * gesture.deltaPosition.x / Screen.width * moveSpeed, Space.World);
+            transform.Translate(Vector3.back * gesture.deltaPosition.y / Screen.height * moveSpeed, Space.World);
+        }
+
+        /// <summary>
+        /// 双指滑动,控制视野缩放
+        /// </summary>
+        /// <param name="gesture"></param>
+        private void On_Pinch(Gesture gesture)
+        {
+            // Camera.main.fieldOfView += gesture.deltaPinch * Time.deltaTime;
+            transform.position += transform.forward * gesture.deltaPinch * Time.deltaTime * scaleSpeed;
         }
     }
 }

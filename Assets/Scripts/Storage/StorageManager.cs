@@ -10,10 +10,10 @@ using UnityEngine;
 
 public class StorageManager : MonoBehaviour
 {
-    private static StorageManager _instance;
-
-    public static StorageManager Instance()
-    {
-        return _instance ? _instance : GameObject.Find("StorageManager").GetComponent<StorageManager>();
-    }
+//    private static StorageManager _instance;
+//
+//    public static StorageManager Instance()
+//    {
+//        return _instance ? _instance : GameObject.Find("StorageManager").GetComponent<StorageManager>();
+//    }
 }
