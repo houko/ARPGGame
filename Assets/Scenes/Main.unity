@@ -42903,6 +42903,18 @@ Prefab:
       propertyPath: enableWallDetection
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 11406364, guid: c589025ecb191c64d94887d0e12e0111, type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11481510, guid: c589025ecb191c64d94887d0e12e0111, type: 2}
+      propertyPath: _visible
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11481510, guid: c589025ecb191c64d94887d0e12e0111, type: 2}
+      propertyPath: axis.showSimulatinInspector
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c589025ecb191c64d94887d0e12e0111, type: 2}
   m_IsPrefabAsset: 0
@@ -54753,8 +54765,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2078202923}
   - component: {fileID: 2078202927}
-  - component: {fileID: 2078202926}
-  - component: {fileID: 2078202925}
   - component: {fileID: 2078202924}
   - component: {fileID: 2078202928}
   m_Layer: 0
@@ -54779,20 +54789,6 @@ Transform:
   m_LocalEulerAnglesHint: {x: 25.099, y: -76.604004, z: 0}
 --- !u!81 &2078202924
 AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2078202922}
-  m_Enabled: 1
---- !u!92 &2078202925
-Behaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2078202922}
-  m_Enabled: 1
---- !u!124 &2078202926
-Behaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
@@ -54826,7 +54822,7 @@ Camera:
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 1591
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
