@@ -3,7 +3,7 @@ using UnityEngine.EventSystems;
 
 namespace UI
 {
-    public class BagItem : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
+    public class BagItem : MonoBehaviour, IPointerClickHandler
     {
         private GameObject desc;
 
@@ -13,14 +13,9 @@ namespace UI
             desc = transform.Find("Desc").gameObject;
         }
 
-        public void OnPointerEnter(PointerEventData eventData)
+        public void OnPointerClick(PointerEventData eventData)
         {
-            desc.SetActive(true);
-        }
-
-        public void OnPointerExit(PointerEventData eventData)
-        {
-            desc.SetActive(false);
+            desc.SetActive(!desc.activeSelf);
         }
     }
 }
