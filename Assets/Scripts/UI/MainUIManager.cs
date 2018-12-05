@@ -17,11 +17,5 @@ namespace UI
         {
             BagFrom.gameObject.SetActive(!BagFrom.gameObject.activeSelf);
         }
-
-
-        public void CloseBag()
-        {
-            BagFrom.gameObject.SetActive(false);
-        }
     }
 }
