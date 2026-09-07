@@ -8,8 +8,11 @@ using HedgehogTeam.EasyTouch;
 
 [InitializeOnLoad]
 public class EasytouchHierachyCallBack{
-	
+	#if UNITY_6000_4_OR_NEWER
+	private static readonly EditorApplication.HierarchyWindowItemByEntityIdCallback hiearchyItemCallback;
+	#else
 	private static readonly EditorApplication.HierarchyWindowItemCallback hiearchyItemCallback;
+	#endif
 	private static Texture2D hierarchyIcon;
 	private static Texture2D HierarchyIcon {
 		get {
@@ -34,14 +37,24 @@ public class EasytouchHierachyCallBack{
 	// constructor
 	static EasytouchHierachyCallBack()
 	{
+		#if UNITY_6000_4_OR_NEWER
+		EasytouchHierachyCallBack.hiearchyItemCallback = new EditorApplication.HierarchyWindowItemByEntityIdCallback(EasytouchHierachyCallBack.DrawHierarchyIcon);
+		EditorApplication.hierarchyWindowItemByEntityIdOnGUI += EasytouchHierachyCallBack.hiearchyItemCallback;
+		#else
 		EasytouchHierachyCallBack.hiearchyItemCallback = new EditorApplication.HierarchyWindowItemCallback(EasytouchHierachyCallBack.DrawHierarchyIcon);
 		EditorApplication.hierarchyWindowItemOnGUI = (EditorApplication.HierarchyWindowItemCallback)Delegate.Combine(EditorApplication.hierarchyWindowItemOnGUI, EasytouchHierachyCallBack.hiearchyItemCallback);
+		#endif
 		
 	}
-	
+	#if UNITY_6000_3_OR_NEWER
+	private static void DrawHierarchyIcon(UnityEngine.EntityId entityId, Rect selectionRect)
+	{
+		GameObject gameObject = EditorUtility.EntityIdToObject(entityId) as GameObject;
+	#else
 	private static void DrawHierarchyIcon(int instanceID, Rect selectionRect)
 	{
 		GameObject gameObject = EditorUtility.InstanceIDToObject(instanceID) as GameObject;
+	#endif
 
 		if (gameObject != null){
 			Rect rect = new Rect(selectionRect.x + selectionRect.width - 16f, selectionRect.y, 16f, 16f);
